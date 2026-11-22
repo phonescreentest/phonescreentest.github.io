@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Phone Screen Test</title>
+<meta name="description" content="Contact Phone Screen Test — questions, feedback or suggestions about the free phone screen test tool.">
+<link rel="canonical" href="https://phonescreentest.github.io/contact.html">
+<link rel="stylesheet" href="styles.css">
+<!-- Google Search Console verification + Google Analytics: to be added after upload (own property, separate from the other sites). -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖥️</text></svg>">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span class="mark">🖥️</span>Phone<b> Screen Test</b></a>
+    <button type="button" class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main">
+      <a href="index.html">Home</a>
+      <div class="nav-drop">
+        <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">Tools <span class="caret" aria-hidden="true"></span></button>
+        <div class="nav-drop-menu">
+          <a href="index.html">Screen Test</a>
+        </div>
+      </div>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="page">
+    <h1>Contact Us</h1>
+    <p>Have a question about the tool, found a bug, or have an idea to make it better? We would like to hear from you.</p>
+    <form class="contact" id="contactForm">
+      <label for="name">Your name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+      <label for="email">Your email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      <label for="topic">Topic</label>
+      <select id="topic" name="topic">
+        <option>Question about the tool</option>
+        <option>Report a problem</option>
+        <option>Suggestion / feedback</option>
+        <option>Other</option>
+      </select>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Write your message here&hellip;" required></textarea>
+      <button type="submit" class="btn-main">Send Message</button>
+    </form>
+    <p style="color:#475569;font-size:14px;margin-top:14px;">Sending opens your email app with the message ready to send to us. We usually reply within a few days.</p>
+    <p><a href="index.html">&larr; Back to the screen test</a></p>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 PhoneScreenTest — Free phone screen test tool.</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html">Screen Test</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var name = document.getElementById('name').value.trim();
+  var email = document.getElementById('email').value.trim();
+  var topic = document.getElementById('topic').value;
+  var message = document.getElementById('message').value.trim();
+  var subject = encodeURIComponent('PhoneScreenTest — ' + topic + ' (from ' + name + ')');
+  var body = encodeURIComponent(message + '\n\n— ' + name + ' (' + email + ')');
+  window.location.href = 'mailto:imosmanshahid@gmail.com?subject=' + subject + '&body=' + body;
+});
+</script>
+<script>
+/* Header menu: hamburger toggle + Tools dropdown (same behaviour as our other sites). */
+(function () {
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.querySelector('nav.main');
+  if (menuBtn && mainNav) {
+    menuBtn.addEventListener('click', function () {
+      var open = mainNav.classList.toggle('open');
+      menuBtn.classList.toggle('open', open);
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainNav.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        mainNav.classList.remove('open');
+        menuBtn.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+  var drop = document.querySelector('.nav-drop');
+  if (drop) {
+    var btn = drop.querySelector('.nav-drop-btn');
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = drop.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('click', function (e) {
+      if (!drop.contains(e.target)) {
+        drop.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+})();
+</script>
+<script src="app.js"></script>
+</body>
+</html>

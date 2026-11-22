@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Phone Screen Test</title>
+<meta name="description" content="About Phone Screen Test — a free tool with 57 display tests for dead pixels, colors, brightness, touch and refresh rate, right in your browser.">
+<link rel="canonical" href="https://phonescreentest.github.io/about.html">
+<link rel="stylesheet" href="styles.css">
+<!-- Google Search Console verification + Google Analytics: to be added after upload (own property, separate from the other sites). -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖥️</text></svg>">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span class="mark">🖥️</span>Phone<b> Screen Test</b></a>
+    <button type="button" class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main">
+      <a href="index.html">Home</a>
+      <div class="nav-drop">
+        <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">Tools <span class="caret" aria-hidden="true"></span></button>
+        <div class="nav-drop-menu">
+          <a href="index.html">Screen Test</a>
+        </div>
+      </div>
+      <a href="about.html" class="active">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="page">
+    <h1>About Us</h1>
+    <p>Phone Screen Test is a free web tool with one job: help you check whether your screen is healthy — dead pixels, stuck pixels, uneven colors, backlight bleed, touch dead zones and refresh-rate problems, all in one place.</p>
+    <p>That need is real. A new phone can arrive with a dead pixel you only notice weeks later, and a used phone can hide a faint burn-in mark or a touch dead zone that only shows up in one corner. Finding these problems by eye is hard without the right patterns on screen — a plain white wallpaper will not show a stuck red pixel, and a photo will not show backlight bleed. This tool puts the right pattern on your screen, one test at a time.</p>
+    <p>That is why we built this tool for the browser. Open the page, tap Start Screen Test, and the checks run one after another in fullscreen — no app, no download, no account. It works on phones, tablets, laptops and desktops, because every one of them has a browser.</p>
+    <h2>What the tool does</h2>
+    <ul>
+      <li><strong>57 display tests in 8 categories</strong> — Pixel &amp; Display, Color, Brightness &amp; Uniformity, Touch, Motion &amp; Refresh, Image Quality, OLED &amp; Panel Health, and Orientation.</li>
+      <li><strong>Solid Color Test</strong> — one run through white, black, red, green, blue and gray, the classic way to catch dead or stuck pixels.</li>
+      <li><strong>Touch tests</strong> — coverage, multi-touch, accuracy, edges, corners and dead zones, so you can find the exact spot that does not respond.</li>
+      <li><strong>Brightness and backlight checks</strong> — bleed, clouding and uniformity, best checked in a dim room.</li>
+      <li><strong>Motion and refresh rate</strong> — moving patterns and a browser-measured refresh-rate reading.</li>
+      <li><strong>Results summary</strong> — mark each test "Looks good" or "Problem found" and get a summary at the end, with a button to re-run just the failed tests.</li>
+    </ul>
+    <h2>Who we are</h2>
+    <p>We also run the <a href="https://speakercleaners.github.io/" target="_blank" rel="noopener">SpeakerCleaners</a> tool, the <a href="https://whitescreentest.github.io/" target="_blank" rel="noopener">White Screen</a> test and the <a href="https://phonescreenresolution.github.io/" target="_blank" rel="noopener">Phone Screen Resolution</a> tool. Phone Screen Test is our fourth free tool — same idea, different question: instead of cleaning a speaker or measuring a resolution, it checks whether the screen itself is healthy.</p>
+    <h2>Our promise</h2>
+    <p>The tool is free and will stay free. There are no accounts, no subscriptions, no locked features and no downloads. We do not collect your data — every test runs on your own device, in your browser, and nothing leaves it.</p>
+    <p>If the tool helped you check a new phone — or catch a problem before a return window closed — share it with someone shopping for their next screen.</p>
+    <p><a href="index.html">&larr; Back to the screen test</a></p>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 PhoneScreenTest — Free phone screen test tool.</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html">Screen Test</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</footer>
+<script>
+/* Header menu: hamburger toggle + Tools dropdown (same behaviour as our other sites). */
+(function () {
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.querySelector('nav.main');
+  if (menuBtn && mainNav) {
+    menuBtn.addEventListener('click', function () {
+      var open = mainNav.classList.toggle('open');
+      menuBtn.classList.toggle('open', open);
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainNav.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        mainNav.classList.remove('open');
+        menuBtn.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+  var drop = document.querySelector('.nav-drop');
+  if (drop) {
+    var btn = drop.querySelector('.nav-drop-btn');
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = drop.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('click', function (e) {
+      if (!drop.contains(e.target)) {
+        drop.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+})();
+</script>
+<script src="app.js"></script>
+</body>
+</html>
