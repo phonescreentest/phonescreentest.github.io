@@ -36,4 +36,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://phonescreentest.github.io/ipad-screen-test.html</loc>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://phonescreentest.github.io/tablet-screen-test.html</loc>
+    <lastmod>2026-11-25</lastmod>
+  </url>
 </urlset>
