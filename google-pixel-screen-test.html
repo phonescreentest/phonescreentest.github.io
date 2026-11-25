@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Pixel Screen Test - Dead Pixels &amp; Touch (Free)</title>
+<meta name="description" content="Test your Google Pixel screen for dead pixels, green tint at low brightness, touch dead zones and drop damage. Free online Pixel OLED test, no app needed.">
+<meta name="google-site-verification" content="_-BRUVU3ety-sxMiKPLYXIAc3S__Jb0sioMftiq5Fuo" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZN1ZHYV9C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2ZN1ZHYV9C');
+</script>
+<meta name="keywords" content="google pixel screen test, pixel display test, pixel dead pixel test, pixel touch test, pixel green tint test, check pixel screen">
+<link rel="canonical" href="https://phonescreentest.github.io/google-pixel-screen-test.html">
+<meta property="og:title" content="Google Pixel Screen Test - Dead Pixels &amp; Touch (Free)">
+<meta property="og:description" content="Test your Google Pixel screen for dead pixels, green tint at low brightness, touch dead zones and drop damage. Free online Pixel OLED test, no app needed.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://phonescreentest.github.io/google-pixel-screen-test.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="screen-test-assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖥️</text></svg>">
+<style>
+:root{--bg:#f0fdfa;--panel:#fff;--panel2:#ccfbf1;--line:#99f6e4;--text:#0f2b2b;--muted:#475569;--accent:#0d9488;--accent2:#0891b2;--accent-dark:#0f766e}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.site{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:60px}
+.logo{font-size:22px;font-weight:800;color:var(--text);display:flex;align-items:center;gap:8px}
+.logo:hover{text-decoration:none}
+.logo .mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:18px}
+.logo b{color:var(--accent);font-weight:800}
+nav.main{display:flex;gap:4px;flex-wrap:wrap}
+nav.main a{color:var(--text);font-weight:600;padding:8px 12px;border-radius:8px}
+nav.main a:hover,nav.main a.active{background:var(--panel2);color:var(--accent-dark);text-decoration:none}
+.menu-btn{display:none}
+.nav-drop{position:relative}
+.nav-drop-btn{font-family:inherit;font-size:16px;font-weight:600;color:var(--text);background:none;border:0;padding:8px 12px;border-radius:8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.nav-drop-btn:hover,.nav-drop-btn.active{background:var(--panel2);color:var(--accent-dark)}
+.nav-drop-btn .caret{width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid currentColor;transition:transform .2s}
+.nav-drop.open .nav-drop-btn .caret{transform:rotate(180deg)}
+.nav-drop-menu{display:none;position:absolute;top:calc(100% + 6px);left:0;min-width:230px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 30px rgba(13,148,136,.15);padding:6px;z-index:20}
+.nav-drop.open .nav-drop-menu{display:block}
+.nav-drop-menu a{display:block;padding:10px 12px;border-radius:8px;color:var(--text);font-weight:600}
+.nav-drop-menu a:hover,.nav-drop-menu a.active{background:var(--panel2);color:var(--accent-dark);text-decoration:none}
+.page-hero{text-align:center;padding:40px 20px 6px}
+.page-hero h1{font-size:46px;line-height:1.15;margin:0 0 10px;color:var(--accent-dark)}
+.page-hero p.lede{font-size:18px;color:var(--muted);max-width:660px;margin:0 auto 22px}
+footer.site{border-top:1px solid var(--line);background:#fff;padding:26px 0;margin-top:20px}
+footer.site .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+footer.site nav{display:flex;gap:16px;flex-wrap:wrap}
+footer.site nav a{color:var(--muted)}
+/* Top actions: Start Screen Test + Select Individual Tests (own classes, no clash with plugin .btn) */
+.pst-top-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:0 auto 8px}
+.pst-start{border:0;cursor:pointer;padding:15px 30px;border-radius:999px;font-size:18px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent2));font-family:inherit}
+.pst-start:hover{opacity:.92}
+.pst-select{border:2px solid var(--accent);background:#fff;color:var(--accent-dark);cursor:pointer;padding:13px 26px;border-radius:999px;font-size:17px;font-weight:700;font-family:inherit}
+.pst-select:hover{background:var(--panel2)}
+.pst-top-note{text-align:center;color:var(--muted);font-size:15px;margin:6px 0 0}
+/* All-tests list below the tool (own .pst- classes; plugin .card/.btn untouched) */
+.pst-all{max-width:920px;margin:0 auto;padding:30px 20px 10px}
+.pst-all h2{font-size:28px;margin:0 0 8px;color:var(--text)}
+.pst-all-intro{color:var(--muted);font-size:16px;line-height:1.6;margin:0 0 10px}
+.pst-all h3{font-size:21px;margin:26px 0 10px;color:var(--accent-dark)}
+.pst-test-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.pst-test-btn{display:block;width:100%;text-align:left;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;cursor:pointer;font-family:inherit}
+.pst-test-btn:hover{border-color:var(--accent);box-shadow:0 6px 18px rgba(13,148,136,.14)}
+.pst-test-name{display:block;font-size:16px;font-weight:800;color:var(--text)}
+.pst-test-desc{display:block;font-size:14px;line-height:1.5;color:var(--muted);margin:5px 0 10px}
+.pst-test-run{display:inline-block;font-size:14px;font-weight:800;color:var(--accent)}
+.pst-test-group{background:linear-gradient(135deg,#f0fdfa,#ecfeff);border-color:var(--accent)}
+/* SEO content under the tool (own classes, no clash with the tool stylesheet) */
+.st-info{max-width:760px;margin:0 auto;padding:26px 20px 10px}
+.st-info h2{font-size:26px;margin:0 0 8px;color:#0f2b2b}
+.st-info p,.st-info li{color:#475569;font-size:16px;line-height:1.6}
+.st-info ul,.st-info ol{margin:8px 0 18px;padding-left:22px}
+.st-info details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+.st-info summary{font-weight:700;cursor:pointer;font-size:16px;color:#0f2b2b}
+.st-info details p{margin:8px 0 0}
+@media (max-width:820px){
+  .page-hero h1{font-size:34px}
+  .nav-drop{width:100%}
+  .nav-drop-btn{width:100%;justify-content:space-between}
+  .nav-drop-menu{position:static;box-shadow:none;border:0;border-radius:0;background:transparent;padding:2px 0 2px 14px;min-width:0}
+  .nav-drop-menu a{padding:10px 12px}
+  header.site .wrap{position:relative}
+  .menu-btn{display:flex;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;padding:9px;background:none;border:0;cursor:pointer}
+  .menu-btn span{display:block;height:3px;background:var(--text);border-radius:2px;transition:transform .2s,opacity .2s}
+  .menu-btn.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+  .menu-btn.open span:nth-child(2){opacity:0}
+  .menu-btn.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+  nav.main{display:none}
+  nav.main.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:10px 20px 14px;gap:2px}
+  nav.main.open a{padding:10px 12px}
+}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="https://phonescreentest.github.io/"><span class="mark">🖥️</span>Phone<b> Screen Test</b></a>
+    <button type="button" class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main">
+      <a href="https://phonescreentest.github.io/">Home</a>
+      <div class="nav-drop">
+        <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">Tools <span class="caret" aria-hidden="true"></span></button>
+        <div class="nav-drop-menu">
+          <a href="https://phonescreentest.github.io/">Screen Test</a>
+        </div>
+      </div>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="page-hero">
+    <h1>Google Pixel Screen Test</h1>
+    <p class="lede">Check your Pixel display for dead pixels, green tint at low brightness, touch dead zones and damage after a drop or repair. This free Pixel screen test runs in your browser with no app to install.</p>
+  </div>
+
+  <div class="pst-top-actions">
+    <button type="button" class="pst-start" data-stt-start>&#9654; Start Screen Test</button>
+    <button type="button" class="pst-select" id="pstSelectBtn">Select Individual Tests</button>
+  </div>
+  <p class="pst-top-note">Start runs the full guided check. Or pick any single test from the list below.</p>
+
+<div class="screen-test-tool-wrapper">
+<div id="screen-test-app" style="visibility:hidden">
+
+  <!-- ============ CATEGORY QUICK-START SCREEN ============ -->
+  <div id="category-screen">
+    <div class="page-wrap">
+      <header class="hero">
+        <span class="eyebrow">
+          <svg width="14" height="14" style="width:14px;height:14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          Display &amp; touch diagnostics
+        </span>
+      </header>
+
+      <div class="card" id="screen-test-cards">
+        <div class="card-header">
+          <h2>Choose a quick test</h2>
+          <p>Tap a card to jump straight into that set of tests.</p>
+        </div>
+        <div class="category-grid" id="category-grid"></div>
+      </div>
+
+      <div class="individual-tests-link-wrap" style="text-align:center;margin-top:20px;">
+        <button class="link-btn" id="show-individual-tests-link">Or choose individual tests →</button>
+      </div>
+
+      <footer class="tiny-note">Screen Test runs entirely in your browser. Results are based on visual inspection and are not a professional hardware diagnosis.</footer>
+    </div>
+  </div>
+
+  <!-- ============ SELECTION SCREEN (advanced / individual tests) ============ -->
+  <div id="selection-screen" class="hidden">
+    <div class="page-wrap">
+      <div style="margin-bottom:10px;">
+        <button class="link-btn" id="back-to-quickstart-link">← Back to quick start</button>
+      </div>
+      <header class="hero">
+        <span class="eyebrow">
+          <svg width="14" height="14" style="width:14px;height:14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          Display &amp; touch diagnostics
+        </span>
+      </header>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Choose the test(s) you would like to perform</h2>
+          <p>Tap a test to select it, or the info icon to see what it checks.</p>
+        </div>
+        <div class="categories" id="categories-container"></div>
+
+        <div class="control-bar">
+          <div class="bulk-actions">
+            <button class="link-btn" id="select-all-btn">Select all</button>
+            <button class="link-btn" id="select-none-btn">Select none</button>
+            <span class="count-pill" id="count-pill"><b>0</b> tests selected</span>
+          </div>
+          <div class="action-btns">
+            <button class="btn btn-ghost" id="setup-guide-btn">View setup guide</button>
+            <button class="btn btn-primary" id="start-test-btn" disabled>Start test</button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="tiny-note">Screen Test runs entirely in your browser. Results are based on visual inspection and are not a professional hardware diagnosis.</footer>
+    </div>
+  </div>
+
+  <!-- ============ TEST RUNNER ============ -->
+  <div id="test-runner" class="hidden">
+    <div id="runner-topbar">
+      <span class="topbar-chip" id="progress-chip">Test 1 of 1<span class="test-title" id="runner-test-name"></span></span>
+    </div>
+    <div id="test-stage" role="region" aria-label="Test display area"></div>
+    <button id="stt-v102-runner-controls-toggle" type="button" aria-label="Hide test navigation" aria-expanded="true" title="Hide test navigation">
+      <svg class="stt-v102-toggle-arrow stt-v102-toggle-arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+      <svg class="stt-v102-toggle-arrow stt-v102-toggle-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg>
+    </button>
+    <div id="runner-bottombar">
+      <button class="rbtn" id="btn-prev" aria-label="Previous test">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        Previous
+      </button>
+      <button class="rbtn bad" id="btn-problem">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg>
+        Problem found
+      </button>
+      <button class="rbtn good" id="btn-good">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        Looks good
+      </button>
+      <button class="rbtn" id="btn-skip">Skip</button>
+      <button class="rbtn" id="btn-next" aria-label="Next test">
+        Next
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+
+    <!-- Inside the fullscreen element so the confirmation remains visible. -->
+    <div class="modal-overlay hidden" id="exit-modal-overlay">
+      <div class="modal" style="max-width:380px;" role="dialog" aria-modal="true" aria-labelledby="exit-modal-title">
+        <h3 id="exit-modal-title">Exit this test?</h3>
+        <p>Your progress on remaining tests will be lost. Completed results so far won't be saved.</p>
+        <div class="modal-actions">
+          <button class="btn" id="exit-cancel-btn">Keep testing</button>
+          <button class="btn btn-danger" id="exit-confirm-btn">Exit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ RESULTS SCREEN ============ -->
+  <div id="results-screen" class="hidden">
+    <div class="page-wrap">
+      <header class="hero">
+        <span class="eyebrow">
+          <svg width="14" height="14" style="width:14px;height:14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          Screen test complete
+        </span>
+        <h2 style="font-size:clamp(30px,5vw,42px);">Your results</h2>
+        <p>Here's how your display performed across the tests you ran.</p>
+      </header>
+      <div class="card">
+        <div class="results-summary" id="results-summary"></div>
+        <div class="result-list" id="results-list"></div>
+        <div class="control-bar" style="justify-content:center;">
+          <div class="action-btns">
+            <button class="btn" id="test-again-btn">Test again</button>
+            <button class="btn" id="run-failed-btn">Run failed tests</button>
+            <button class="btn btn-primary" id="new-test-btn">Start new test</button>
+            <button class="btn stt-results-close" id="results-close-btn">Close</button>
+          </div>
+        </div>
+      </div>
+      <footer class="tiny-note">Your results are based on the tests you performed and are not a professional hardware diagnosis.</footer>
+    </div>
+  </div>
+
+  <!-- Info modal -->
+  <div class="modal-overlay hidden" id="info-modal-overlay">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="info-modal-title">
+      <span class="cat-tag" id="info-modal-cat"></span>
+      <h3 id="info-modal-title"></h3>
+      <p id="info-modal-desc"></p>
+      <div class="modal-actions">
+        <button class="btn" id="info-modal-close">Close</button>
+        <button class="btn btn-primary" id="info-modal-select">Select this test</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Setup guide modal -->
+  <div class="modal-overlay hidden" id="guide-modal-overlay">
+    <div class="modal" style="max-width:480px;" role="dialog" aria-modal="true" aria-labelledby="guide-modal-title">
+      <h3 id="guide-modal-title">Before you start</h3>
+      <ol class="guide-list">
+        <li><span class="num">1</span> Clean your screen so smudges aren't mistaken for dead pixels or clouding.</li>
+        <li><span class="num">2</span> Dim the room for backlight bleed, light leakage, and black-level tests — these show up best in the dark.</li>
+        <li><span class="num">3</span> Use normal room lighting for color, brightness, and uniformity tests.</li>
+        <li><span class="num">4</span> For touch tests, use a finger or stylus and try to cover the entire screen, including edges and corners.</li>
+        <li><span class="num">5</span> Fullscreen mode gives the most accurate results — allow it if your browser prompts you.</li>
+        <li><span class="num">6</span> Motion and refresh-rate readings are approximate, browser-measured estimates — not exact hardware specs.</li>
+      </ol>
+      <div class="modal-actions">
+        <button class="btn btn-primary" id="guide-modal-close">Got it</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+  </div>
+
+<section class="pst-all" id="all-tests">
+<h2>All screen tests</h2>
+<p class="pst-all-intro">Every test below runs on its own — tap any test to start just that one, in fullscreen. There are 56 individual tests, plus the Solid Color Test, which cycles white, black, red, green, blue and gray in one run.</p>
+<h3>Pixel &amp; Display</h3>
+<div class="pst-test-grid">
+<button type="button" class="pst-test-btn pst-test-group" data-group-label="Solid Color Test"><span class="pst-test-name">Solid Color Test</span><span class="pst-test-desc">One run through all six solid colours — white, black, red, green, blue, gray — to catch dead or stuck pixels.</span><span class="pst-test-run">Run all 6 colours →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="test-pattern"><span class="pst-test-name">Test Pattern</span><span class="pst-test-desc">Cycles through color bars, grayscale steps and a pixel grid in one pass — a quick first look at your panel before running individual tests.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="dead-pixel"><span class="pst-test-name">Dead Pixel Test</span><span class="pst-test-desc">Displays solid colors edge-to-edge so you can look for pixels that stay black or don&#x27;t display any color at all — a sign of a dead pixel.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="stuck-pixel"><span class="pst-test-name">Stuck Pixel Test</span><span class="pst-test-desc">Shows the same pure colors as the dead pixel test. Look for a pixel that stays lit in one color (often red, green or blue) no matter what&#x27;s on screen — that&#x27;s a stuck pixel, not a dead one.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="sub-pixel"><span class="pst-test-name">Sub-Pixel Test</span><span class="pst-test-desc">Zooms into thin repeating red, green and blue stripes so you can inspect individual sub-pixels for discoloration or damage.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="pixel-grid"><span class="pst-test-name">Pixel Grid</span><span class="pst-test-desc">Displays a high-contrast one-pixel grid across the whole screen, useful for spotting alignment, scaling or panel-uniformity issues.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="black-screen"><span class="pst-test-name">Black Screen</span><span class="pst-test-desc">Fills the screen with pure black (#000000) — the classic way to check for backlight bleed, light leakage and stuck sub-pixels.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="red-screen"><span class="pst-test-name">Red Screen</span><span class="pst-test-desc">Fills the screen with pure red (#FF0000) to help reveal dead or stuck pixels and red sub-pixel issues.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="green-screen"><span class="pst-test-name">Green Screen</span><span class="pst-test-desc">Fills the screen with pure green (#00FF00) — the color the human eye is most sensitive to, making pixel defects easiest to spot.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="blue-screen"><span class="pst-test-name">Blue Screen</span><span class="pst-test-desc">Fills the screen with pure blue (#0000FF) to help reveal dead or stuck pixels and blue sub-pixel issues.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="gray-screen"><span class="pst-test-name">Gray Screen</span><span class="pst-test-desc">Cycles through several flat gray levels. Gray makes uneven tint, dirty pixels and panel blemishes far more visible than white or black alone.</span><span class="pst-test-run">Run test →</span></button>
+</div>
+<h3>Color</h3>
+<div class="pst-test-grid">
+<button type="button" class="pst-test-btn" data-test-id="color-test"><span class="pst-test-name">Color Test</span><span class="pst-test-desc">Shows a full grid of saturated hues across the spectrum so you can check for color casts, dead pixels of a specific color, or panel-wide tint.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="color-distances"><span class="pst-test-name">Color Distances</span><span class="pst-test-desc">Places subtly different, closely related colors side by side. If neighboring swatches look identical, your display may struggle with fine color separation.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="color-accuracy"><span class="pst-test-name">Color Accuracy</span><span class="pst-test-desc">Displays familiar reference colors — skin tone, sky blue, grass green, warm white — so you can judge whether colors look natural rather than shifted.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="gradients"><span class="pst-test-name">Gradients</span><span class="pst-test-desc">Shows smooth black-to-white and red/green/blue gradients. Tap to cycle. Look for smooth transitions rather than visible steps or color shifts.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="gradient-banding"><span class="pst-test-name">Gradient Banding</span><span class="pst-test-desc">A slow, wide grayscale gradient designed to expose banding — visible stripes where there should be a smooth transition, often caused by a limited color depth or poor scaling.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="contrast-test"><span class="pst-test-name">Contrast Test</span><span class="pst-test-desc">Displays adjoining black and white blocks at different sizes so you can judge how crisply your display separates the darkest and brightest tones.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="gamma-test"><span class="pst-test-name">Gamma Test</span><span class="pst-test-desc">Shows striped patches next to flat gray reference patches at common gamma values. The patch where the stripes visually blend into the flat gray at a normal viewing distance indicates your display&#x27;s gamma.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="color-saturation"><span class="pst-test-name">Color Saturation Test</span><span class="pst-test-desc">Shows the same hues at increasing saturation levels, from washed-out to fully saturated, to help you judge color vibrancy and any clipping at high saturation.</span><span class="pst-test-run">Run test →</span></button>
+</div>
+<h3>Brightness &amp; Uniformity</h3>
+<div class="pst-test-grid">
+<button type="button" class="pst-test-btn" data-test-id="brightness-test"><span class="pst-test-name">Brightness Test</span><span class="pst-test-desc">Displays a row of gray steps from near-black to near-white so you can check that every brightness level is distinguishable from its neighbors.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="brightness-uniformity"><span class="pst-test-name">Brightness Uniformity</span><span class="pst-test-desc">Fills the screen with flat white and overlays a faint grid so you can compare brightness across corners, edges and center for uneven backlighting.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="screen-uniformity"><span class="pst-test-name">Screen Uniformity</span><span class="pst-test-desc">Cycles through gray, white and black full-screen fills to help you spot patchy or uneven areas across the whole panel.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="gray-uniformity"><span class="pst-test-name">Gray Uniformity</span><span class="pst-test-desc">A flat mid-gray fill — the tone that most readily reveals tinting, blotches or panel unevenness that pure white or black can hide.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="backlight-bleed"><span class="pst-test-name">Backlight Bleed Test</span><span class="pst-test-desc">Fills the screen with pure black. In a dark room, look for glowing patches near the edges or corners — a sign of backlight bleed on LCD panels.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="light-leakage"><span class="pst-test-name">Light Leakage Test</span><span class="pst-test-desc">Similar to the backlight bleed test — a full black screen for inspecting light escaping around the bezel or edges of the panel in a dark room.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="clouding-test"><span class="pst-test-name">Clouding Test</span><span class="pst-test-desc">Shows dark gray fills in a dim room, helping reveal &#x27;clouding&#x27; — soft, uneven cloud-like patches of lighter backlight bleeding through dark scenes.</span><span class="pst-test-run">Run test →</span></button>
+</div>
+<h3>Touch</h3>
+<div class="pst-test-grid">
+<button type="button" class="pst-test-btn" data-test-id="touch-coverage"><span class="pst-test-name">Touch Coverage Test</span><span class="pst-test-desc">Swipe your finger continuously across the whole grid — every cell it passes over turns green. Any cell left dark after a full pass may be a dead touch zone. Tap Reset to try again.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="touch-test"><span class="pst-test-name">Touch Test</span><span class="pst-test-desc">Tap anywhere on the screen. Each tap leaves a mark so you can confirm the touch layer is registering input across the whole surface.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="multi-touch"><span class="pst-test-name">Multi-Touch Test</span><span class="pst-test-desc">Place several fingers on the screen at once. Each detected touch point is labeled (Finger 1, Finger 2...) so you can verify simultaneous multi-touch tracking.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="touch-accuracy"><span class="pst-test-name">Touch Accuracy Test</span><span class="pst-test-desc">Tap the center of each target as precisely as you can. Consistent offset between where you tap and where it registers suggests a touch calibration issue.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="touch-sensitivity"><span class="pst-test-name">Touch Sensitivity Test</span><span class="pst-test-desc">Try both light and firm taps across the screen. Note any areas that need extra pressure to register — browsers can&#x27;t measure pressure directly, so this is a manual comparison.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="touch-grid"><span class="pst-test-name">Touch Grid Test</span><span class="pst-test-desc">Tap every cell in the grid to find touch zones that don&#x27;t respond. Tested cells turn green, and coordinates plus response time are shown for each tap.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="touch-line"><span class="pst-test-name">Touch Line Test</span><span class="pst-test-desc">Drag your finger continuously across the entire screen. Gaps or jumps in the drawn line can reveal areas where touch tracking breaks down.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="edge-touch"><span class="pst-test-name">Edge Touch Test</span><span class="pst-test-desc">Tap along the thin zones running down each edge of the screen — edges are the most common place for touch digitizers to lose accuracy.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="corner-touch"><span class="pst-test-name">Corner Touch Test</span><span class="pst-test-desc">Tap each of the four corner zones. Corners are especially prone to reduced touch sensitivity or dead zones on some devices.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="dead-touch-zone"><span class="pst-test-name">Dead Touch Zone Test</span><span class="pst-test-desc">A finer touch grid covering the full screen. Any cell that stays untested after you&#x27;ve tried tapping it may be a dead touch zone.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="ghost-touch"><span class="pst-test-name">Ghost Touch Test</span><span class="pst-test-desc">Place the device down and don&#x27;t touch the screen. This watches for touch events registering on their own — a possible sign of ghost touch. A browser can only observe and log this; it can&#x27;t diagnose the hardware cause.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="touch-latency"><span class="pst-test-name">Touch Latency Test</span><span class="pst-test-desc">Tap the target repeatedly. This measures the time between your tap event and the next rendered frame — an approximate, browser-level figure, not a hardware latency measurement.</span><span class="pst-test-run">Run test →</span></button>
+</div>
+<h3>Motion &amp; Refresh</h3>
+<div class="pst-test-grid">
+<button type="button" class="pst-test-btn" data-test-id="refresh-rate"><span class="pst-test-name">Refresh Rate Test</span><span class="pst-test-desc">Runs a smooth animation and measures frames rendered per second using the browser&#x27;s own timing. This is an approximate software estimate, not an exact hardware Hz reading.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="motion-test"><span class="pst-test-name">Motion Test</span><span class="pst-test-desc">Moves a high-contrast object smoothly across the screen so you can visually judge how fluid motion looks on your display.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="ghosting-test"><span class="pst-test-name">Ghosting Test</span><span class="pst-test-desc">Moves a sharp-edged shape quickly across a contrasting background. A trailing shadow behind it can indicate pixel response ghosting.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="motion-blur"><span class="pst-test-name">Motion Blur Test</span><span class="pst-test-desc">Similar fast-moving pattern to the ghosting test, focused on judging overall blur during motion rather than a single trailing edge.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="frame-skipping"><span class="pst-test-name">Frame Skipping Test</span><span class="pst-test-desc">Displays a moving pattern with a live measured frame-rate counter, so stutters or dropped frames are both visible and roughly quantified.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="response-time"><span class="pst-test-name">Response Time Test</span><span class="pst-test-desc">Alternates a fast-moving black/white edge so you can visually inspect for smearing or trailing associated with slow pixel response time.</span><span class="pst-test-run">Run test →</span></button>
+</div>
+<h3>Image Quality</h3>
+<div class="pst-test-grid">
+<button type="button" class="pst-test-btn" data-test-id="sharpness-test"><span class="pst-test-name">Sharpness Test</span><span class="pst-test-desc">Shows a radial star-burst pattern of fine lines converging at the center — a classic way to judge sharpness and detect scaling blur.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="resolution-test"><span class="pst-test-name">Resolution Test</span><span class="pst-test-desc">Shows a fine 1-pixel checkerboard alongside your browser-reported screen resolution and pixel ratio, to help confirm your display is running at its native resolution.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="viewing-angle"><span class="pst-test-name">Viewing Angle Test</span><span class="pst-test-desc">Displays high-contrast color bands. View the screen from different angles — left, right, above and below — and note where colors shift or wash out.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="moire-test"><span class="pst-test-name">Moiré Pattern Test</span><span class="pst-test-desc">Displays fine repeating diagonal lines, which can reveal moiré interference patterns caused by scaling or panel-pitch mismatches.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="checkerboard-test"><span class="pst-test-name">Checkerboard Test</span><span class="pst-test-desc">An alternating black-and-white checkerboard, useful for spotting scaling artifacts, uneven pixels or sharpening halos.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="fine-lines-test"><span class="pst-test-name">Fine Lines Test</span><span class="pst-test-desc">Shows sets of 1px, 2px and 3px lines in both orientations so you can judge how crisply your display renders fine detail.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="text-sharpness"><span class="pst-test-name">Text Sharpness Test</span><span class="pst-test-desc">Displays sample text at a range of sizes so you can check for blurriness, fringing or poor sub-pixel text rendering.</span><span class="pst-test-run">Run test →</span></button>
+</div>
+<h3>OLED &amp; Panel Health</h3>
+<div class="pst-test-grid">
+<button type="button" class="pst-test-btn" data-test-id="burn-in"><span class="pst-test-name">Burn-In Test</span><span class="pst-test-desc">Cycles through solid colors and patterns that can help reveal persistent image retention or burn-in, especially on OLED panels.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="image-retention"><span class="pst-test-name">Image Retention Test</span><span class="pst-test-desc">Shows a static high-contrast pattern briefly, then switches to flat gray and white so you can visually inspect for a lingering ghost image.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="oled-black-level"><span class="pst-test-name">OLED Black Level Test</span><span class="pst-test-desc">Cycles through near-black shades just above true black, useful on OLED panels for spotting uneven black levels or faint glow.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="oled-gray"><span class="pst-test-name">OLED Gray Test</span><span class="pst-test-desc">Cycles through dark-to-mid gray tones, a range where OLED panels can sometimes show banding or slight color tinting.</span><span class="pst-test-run">Run test →</span></button>
+</div>
+<h3>Orientation</h3>
+<div class="pst-test-grid">
+<button type="button" class="pst-test-btn" data-test-id="screen-orientation"><span class="pst-test-name">Screen Orientation Test</span><span class="pst-test-desc">Reads your device&#x27;s current orientation (portrait or landscape) using the browser&#x27;s Screen Orientation API and displays it live as you rotate.</span><span class="pst-test-run">Run test →</span></button>
+<button type="button" class="pst-test-btn" data-test-id="auto-rotate"><span class="pst-test-name">Auto-Rotate Test</span><span class="pst-test-desc">Rotate your physical device and watch whether the reported orientation updates automatically — confirming your device&#x27;s auto-rotate is working.</span><span class="pst-test-run">Run test →</span></button>
+</div>
+</section>
+
+  <section class="st-info">
+<h2>What is a Google Pixel screen test?</h2><p>A Google Pixel screen test is a free online check of the OLED display of your Pixel phone for dead pixels, stuck pixels, green tint, lines and touch faults. Pixel phones use OLED panels with smooth display refresh rates of 90 Hz or 120 Hz on many models, which makes scrolling feel fluid, but the same panels can develop problems easy to miss daily. The best known Pixel display issue is a green tint at low brightness, especially on grey backgrounds, and Pixels can also suffer cracked screens after a drop, or touch dead zones after a repair with a low-quality replacement panel. This test shows full-screen solid colours and a touch grid, so you can examine the whole display closely, including the area around the front camera cutout.</p><p>Use it after a drop, after a screen replacement, or before buying used, when a display fault is one of the most expensive problems to find too late.</p><h2>How to run a screen test on your Google Pixel</h2><ol><li><strong>Turn the brightness right down first.</strong> Pixel green tint shows most clearly at low brightness, so start the test dim and check the grey and white screens.</li><li><strong>Then turn brightness to maximum.</strong> Raise brightness to full and switch off adaptive brightness before checking the remaining colours.</li><li><strong>Open the test in full screen.</strong> Tap start in Chrome and let the test fill the whole display.</li><li><strong>Inspect each solid colour.</strong> Study the white, black, red, green, blue and grey screens for dots, lines, patches or tint.</li><li><strong>Tap the whole touch grid.</strong> Work through every cell, corners and edges included, and watch for cells that do not respond.</li><li><strong>Draw a slow line across the screen.</strong> Drag your finger from side to side and check that the line follows smoothly, with no breaks or jumps, at both low and high brightness.</li></ol><h2>Common Google Pixel display problems this test can reveal</h2><ul><li>Dead or stuck pixels that appear as tiny black, white or coloured dots on solid backgrounds.</li><li>Green tint at low brightness, where grey or white screens take on a greenish cast when brightness is turned down.</li><li>Touch dead zones where taps and swipes are ignored, often near the edges or in a band across the screen.</li><li>Cracks and pressure damage that show as bright spots, dark patches or lines spreading from the impact point.</li><li>Burn-in or image retention, where faint outlines of the navigation bar or status icons linger on plain grey.</li></ul><h2>Tips for an accurate Google Pixel screen test</h2><ul><li>Check grey at several brightness levels, because green tint is strongest at low brightness and can vanish at full brightness.</li><li>Clean the screen first, so dust and fingerprints are not mistaken for dead pixels.</li><li>Test in a dim room, where tint, flicker and subtle lines are easier to see.</li><li>If you suspect a touch fault, take the case and screen protector off your Pixel and run the touch checks again</li></ul><h2>Frequently asked questions</h2><details><summary>What is the green tint problem on Google Pixel screens?</summary><p>Some Pixel OLED displays show a greenish tint on grey or white backgrounds when the brightness is low. It is a known panel trait on certain Pixel models, and this test shows how strong it is.</p></details><details><summary>Does this Pixel screen test work on all Pixel models?</summary><p>Yes. It runs in the browser on any Pixel phone, from older models to the latest ones with 120 Hz smooth display, on small and large Pixel screens.</p></details><details><summary>Do I need to install an app to test my Pixel screen?</summary><p>No. It runs entirely in Chrome or any other browser on your Pixel, with nothing to download, no account and no permissions.</p></details><details><summary>Can I use this test after a Pixel screen repair?</summary><p>Yes, it is a good idea. Replacement screens vary in quality, so run the colour and touch checks after a repair to look for uneven tint, weaker brightness, dead zones or flicker before the repair warranty runs out.</p></details><details><summary>Can I use this test before buying a used Pixel?</summary><p>Yes. Run the test on the phone itself before you pay, check grey at low brightness for green tint, and tap the full touch grid to look for dead zones and damage from a drop.</p></details>
+  </section>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 PhoneScreenTest — Free phone screen test tool.</span>
+    <nav>
+      <a href="https://phonescreentest.github.io/">Home</a>
+      <a href="https://phonescreentest.github.io/">Screen Test</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</footer>
+<script>
+/* Header menu: hamburger toggle + Tools dropdown (same behaviour as our other sites). */
+(function () {
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.querySelector('nav.main');
+  if (menuBtn && mainNav) {
+    menuBtn.addEventListener('click', function () {
+      var open = mainNav.classList.toggle('open');
+      menuBtn.classList.toggle('open', open);
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainNav.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        mainNav.classList.remove('open');
+        menuBtn.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+  var drop = document.querySelector('.nav-drop');
+  if (drop) {
+    var btn = drop.querySelector('.nav-drop-btn');
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = drop.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('click', function (e) {
+      if (!drop.contains(e.target)) {
+        drop.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+})();
+</script>
+<script src="pst.js"></script>
+<script src="screen-test-assets/app.js"></script>
+</body>
+</html>
